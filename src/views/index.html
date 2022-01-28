@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="\css\main.css"/>
+    <link rel="stylesheet" type="text/css" href="\css\normalize.css"/>
+
+	<title>League Of Stadistics</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <section>
+            <div class="circuls-Nav">
+                <div class="circule"></div>
+            </div>
+
+            <form class="form-api" action="/" method="post">
+                <h1>League of <br>Stadistics</h1>
+                <input 
+                spellcheck="false" 
+                type="text" 
+                placeholder="NickName" 
+                id="nickname" 
+                name="nickname" requerid>
+                <p>Press <kbd>enter</kbd> for continue...</p>
+                <button type="submit"></button>
+            </form>
+
+        </section>
+    </div>
+
+</body>
+
+<script>
+
+var input =  document.getElementById('nickname')
+
+input.onkeydown = function(e){
+    if(e.keyCode == 13){
+        console.log("succeful")}
+};
+
+</script>
+
+</html>

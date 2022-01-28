@@ -1,0 +1,25 @@
+@media(max-width: 690px){
+	.app{
+		margin: 30px 0 30px 0;
+		height: unset;
+	}
+
+	.app section{
+		height: auto;
+	}
+
+	.app section .circuls-Nav {
+		height: 30px;
+	}
+	/*-------------------------------front info-------------------------------*/
+	.app section .infoplayers{
+		margin: 40px 0 20px 0;
+		justify-content: center;
+	}
+
+	.app section .infoplayers .infoChampions{
+		justify-content: center;
+	}
+
+
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta  http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="\css\normalize.css"/>
+	<link rel="stylesheet" type="text/css" href="\css\main.css"/>
+    <link rel="stylesheet" type="text/css" href="\css\mediaQ-infoP.css"/>
+
+	<title>League Of Stadistics</title>
+</head>
+
+<body>
+
+    <div class="app">
+        <section>
+            <div class="circuls-Nav">
+                <div class="circule" id="circuleRed"></div>
+            </div>
+
+            <div class="infoplayers">
+                <div class="generalInfo">
+                    <img src="<%= inforeturn.infoplayer.imgPlayer%>">
+                    <p id="name"><b><%= nickname%></b></p>
+                    <p id="level">level: <%= inforeturn.infoplayer.level%></p>
+                    <p id="rank"><%= inforeturn.infoplayer.tier%> <%= inforeturn.infoplayer.rank%></p>
+                    <p id="perjeWins"><%= inforeturn.infoplayer.perjeWins%>% de victorias</p>
+                </div>
+
+                <div class="infoChampions">
+                    <div class="championOne">
+                        <img src="<%= inforeturn.infoplayer.imgchamp1%>">
+                        <p id="name"><b><%= inforeturn.infoplayer.nameChamp1%></b></p>
+                        <p id="Mastery">Mastery: <%= inforeturn.infoplayer.champLVL1%></p>
+                        <p id="Points">Points: <%= inforeturn.infoplayer.champPoint1%></p>
+                    </div>
+
+                    <div class="championTwo">
+                        <img src="<%= inforeturn.infoplayer.imgchamp2%>">
+                        <p id="name"><b><%= inforeturn.infoplayer.nameChamp2%></b></p>
+                        <p id="Mastery">Mastery: <%= inforeturn.infoplayer.champLVL2%></p>
+                        <p id="Points">Points: <%= inforeturn.infoplayer.champPoint2%></p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
+
+<script>
+
+circuleRed = document.getElementById("circuleRed")
+circuleRed.addEventListener("click",function() {
+  window.history.back();
+}
+,false);
+
+</script>
+
+</html>
