@@ -41,7 +41,7 @@ clone the repository:
  
 ```
 
-Git clone https://github.com/FaztWeb/nodejs-jest-supertest
+Git clone https://github.com/golemHub/League-Of-Stadistics
 
 ```
 
